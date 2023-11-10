@@ -1,0 +1,17 @@
+.tag {
+  display: flex;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  background: linear-gradient(86deg, #00f4e2 0%, #00ff7f 100%);
+  width: fit-content;
+
+  span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 0.4px;
+  }
+}

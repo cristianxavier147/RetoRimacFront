@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: #141938;
+  font-weight: 400;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #14193873;
+  color: #fff;
+}

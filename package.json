@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@next/font": "^13.4.19",
+    "axios": "^1.5.0",
+    "formik": "^2.4.4",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "1.26.3",
+    "yup": "^1.2.0"
+  }
+}

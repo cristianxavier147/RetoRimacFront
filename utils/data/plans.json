@@ -1,0 +1,52 @@
+{
+  "plans": [
+    {
+      "name": "Plan en Casa",
+      "recommended": false,
+      "cost": "$39 al mes",
+      "benefits": [
+        {
+          "description": "Médico general a domicilio por S/20 y medicinas cubiertas al 100%."
+        },
+        {
+          "description": "Videoconsulta y orientación telefónica al 100% en medicina general + pediatría."
+        },
+        {
+          "description": "Indemnización de S/300 en caso de hospitalización por más de un día."
+        }
+      ]
+    },
+    {
+      "name": "Plan en Casa y Clínica",
+      "recommended": true,
+      "cost": "$99 al mes",
+      "benefits": [
+        {
+          "description": "Consultas en clínica para cualquier especialidad."
+        },
+        {
+          "description": "Medicinas y exámenes derivados cubiertos al 80%."
+        },
+        {
+          "description": "Atención médica en más de 200 clínicas del país."
+        }
+      ]
+    },
+    {
+      "name": "Plan en Casa + Chequeo",
+      "recommended": false,
+      "cost": "$49 al mes",
+      "benefits": [
+        {
+          "description": "Un Chequeo preventivo general de manera presencial o virtual."
+        },
+        {
+          "description": "Acceso a Vacunas en el Programa del MINSA en centros privados."
+        },
+        {
+          "description": "Incluye todos los beneficios del Plan en Casa."
+        }
+      ]
+    }
+  ]
+}

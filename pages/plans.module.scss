@@ -1,0 +1,75 @@
+.plans {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__wrapper {
+    margin: 0 24px;
+
+    h1 {
+      color: #141938;
+      text-align: center;
+      margin-top: 116px;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -0.6px;
+    }
+
+    h2 {
+      color: #141938;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.1px;
+      margin: 8px 0 32px 0;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &__userBoxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 32px;
+  }
+
+  @media (max-width: 768px) {
+    &__wrapper {
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      h2 {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    &__boxes {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &__userBoxes {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

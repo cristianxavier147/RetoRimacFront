@@ -1,0 +1,73 @@
+.planSelect {
+  display: flex;
+  width: 288px;
+  height: 687px;
+  padding: 68px 32px 48px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0px 1px 32px 0px rgba(174, 172, 243, 0.35);
+  border-radius: 24px;
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    min-width: 152px;
+
+    h2 {
+      color: #141938;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: -0.2px;
+    }
+
+    small {
+      color: #7981b2;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 16px; /* 133.333% */
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #141938;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  &__descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    margin-bottom: 67px;
+  }
+
+  &__button {
+    button {
+      background: #ff1c44;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      border-radius: 32px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+    padding: 40px 32px 48px 32px;
+  }
+}

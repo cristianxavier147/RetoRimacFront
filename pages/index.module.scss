@@ -1,0 +1,177 @@
+.home {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  margin-top: 32px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/imgs/LeftPinkBlur.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 50%;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: url('/assets/imgs/RightCyanBlur.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 50%;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  aside {
+    width: 480px;
+    height: 560px;
+    position: relative;
+  }
+
+  &__heroImg {
+    border-radius: 20px;
+  }
+
+  &__separator {
+    display: none;
+  }
+
+  &__form {
+    display: flex;
+    margin: 32px 216px 80px 128px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 352px;
+    height: 516px;
+  }
+
+  &__formHeadings {
+    h1 {
+      margin: 16px 0 8px 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  &__formImg {
+    display: none;
+  }
+
+  &__formInputs {
+    width: 100%;
+
+    & > div:first-of-type {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__formTerms {
+    & > div:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #03050f;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px; /* 166.667% */
+      letter-spacing: 0.1px;
+      text-decoration-line: underline;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    justify-content: unset;
+    aside {
+      margin-left: 120px;
+    }
+    &__form {
+      margin: 32px 216px 80px 128px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    justify-content: space-around;
+    aside {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+    &__form {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    aside {
+      width: 320px;
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+    aside {
+      display: none;
+    }
+
+    &__form {
+      margin: 0;
+      margin-bottom: 120px;
+    }
+
+    &__formImg {
+      display: block;
+      position: relative;
+      width: 140px;
+      height: 160px;
+    }
+
+    &__formHeadings {
+      h1 {
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 188px;
+      }
+    }
+
+    &__formHeadingsWrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__separator {
+      display: block;
+      margin: 24px 0;
+      height: 1px;
+      background-color: #ccd1ee;
+      border: none;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

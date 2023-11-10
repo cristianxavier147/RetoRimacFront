@@ -1,0 +1,86 @@
+.progressBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .selected {
+    span {
+      color: white !important;
+      background-color: #4f4fff;
+      border: 1px solid transparent;
+    }
+
+    h3 {
+      font-weight: 700;
+      color: #141938 !important;
+    }
+  }
+
+  img {
+    margin: 0 16px;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      margin-left: 16px;
+      color: #7981b2;
+      font-size: 16px;
+    }
+
+    span {
+      color: #7981b2;
+      font-weight: 700;
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+      border: 1px solid #7981b2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .progressBar {
+    width: 100%;
+
+    img {
+      margin: 0;
+    }
+  }
+
+  .progressText {
+    width: fit-content;
+  }
+
+  .mobileProgressBar {
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    width: 100%;
+    border-bottom: 1px solid #d7dbf5;
+  }
+
+  .progressBarMobile {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #d7dbf5;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progressBarMobileFill {
+    height: 100%;
+    background-color: #4f4fff;
+    transition: width 0.3s ease;
+  }
+}

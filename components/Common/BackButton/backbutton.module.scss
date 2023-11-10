@@ -1,0 +1,25 @@
+.backButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    margin-right: 8px;
+  }
+
+  span {
+    color: #4f4fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+  }
+
+  @media (max-width: 770px) {
+    img {
+      margin: 0;
+    }
+  }
+}
